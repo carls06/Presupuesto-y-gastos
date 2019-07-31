@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Presupuesto</title>
+</head>
+<body>
+    <!--           formulario          -->
+    <form id="agregar_gastos">
+        <h2>Agrega tus gastos aqui</h2>
+
+        <div >
+             <label>Nombre Gasto</label>
+             <input id="gasto" type="text" placeholder="Ej. Transporte" />
+        </div>
+   
+        <div >
+             <label>Cantidad</label>
+             <input id="cantidad" type="text" placeholder="Ej. 300" />
+        </div>
+   
+        <input  type="submit" value="Agregar" />
+   </form>
+
+   <br>
+
+   <!--            listado de gastos      -->
+       <div >
+        
+              <h2 >Listado</h2>
+
+              <div id="gastos">
+                 <ul ></ul>
+             </div>
+<!--                  presupuesto  y restante     -->
+            <div >
+                  <div >
+                     <p>Presupuesto: $ <span id="total"></span> </p>
+                  </div>
+                  <div >
+                     <p>Restante: $ <span id="restante"></span></p>
+                   </div>
+           </div> 
+      </div> 
+
+
+
+
+   <script src="./js/index.js"></script>
+</body>
+</html>
